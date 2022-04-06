@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+}
+
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+.controls {
+  padding: 15px;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  position: relative;
+}
+
+.text-container {  
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-block {
+  position: relative;
+  width: 50%;
+  color: #fff;
+  font-size: 1.2em;
+  line-height: 1.5;
+  font-weight: 700;  
+}
+
+.text-value {
+  color: #fff;
+  padding: 2px 0;
+}
+
+.buttons {
+  padding-bottom: 10px;
+}
+
+#svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;  
+  pointer-events: none;
+}
+
+.arrow-path,
+.circle-path {
+  fill: none;
+  stroke-miterlimit: 10;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;  
+  visibility: hidden;
+  stroke: #00ffe0;
+}
+
+
